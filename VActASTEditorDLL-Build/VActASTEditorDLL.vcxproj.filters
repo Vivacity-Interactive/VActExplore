@@ -31,12 +31,21 @@
     <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorVisitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorDefaults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorComment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorDefaults.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorGroup.h">
@@ -49,6 +58,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorUI.h">

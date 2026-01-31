@@ -1,6 +1,8 @@
 #include <iostream>
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!\n";
+	std::string greeting = "World";
+	if (argc >= 2) { greeting = argv[1]; }
+    std::cout << "Hello, " << greeting << "!\n";
 }

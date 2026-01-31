@@ -8,3 +8,5 @@ C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithD
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/VActEditorNode.obj
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/VActEditorUI.obj
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/VActEditorVisitor.obj
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/VActEditorDefaults.obj
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/VActEditorSettings.obj

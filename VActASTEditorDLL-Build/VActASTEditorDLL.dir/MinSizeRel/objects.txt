@@ -8,3 +8,5 @@ C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeR
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/VActEditorNode.obj
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/VActEditorUI.obj
 C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/VActEditorVisitor.obj
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/VActEditorDefaults.obj
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/VActEditorSettings.obj

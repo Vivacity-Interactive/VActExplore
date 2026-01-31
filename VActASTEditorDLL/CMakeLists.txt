@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(PROJECT_NAME VActASTEditorDLL)
 string(REPLACE "DLL" "" TARGET_NAME ${PROJECT_NAME})
 set(OUT_DIR "${CMAKE_SOURCE_DIR}/Bin/$<CONFIG>/${CMAKE_VS_PLATFORM_NAME}")
+set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/Include")
+
+set(PUBLIC_OUT_DIR "${CMAKE_SOURCE_DIR}/../Bin/$<CONFIG>/${CMAKE_VS_PLATFORM_NAME}")
+set(PUBLIC_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/../Include")
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
@@ -32,11 +36,28 @@ add_library(${PROJECT_NAME} SHARED
     VActEditorNode.cpp
     VActEditorUI.cpp
     VActEditorVisitor.cpp
+    VActEditorDefaults.cpp
+    VActEditorSettings.cpp
+)
+
+add_custom_command(
+    TARGET ${PROJECT_NAME}
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory
+        "${PUBLIC_OUT_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${OUT_DIR}"
+        "${PUBLIC_OUT_DIR}"
+)
+
+file(COPY
+    "${INCLUDE_DIR}/"
+    DESTINATION "${PUBLIC_INCLUDE_DIR}"
 )
 
 file(GLOB_RECURSE VACT_PUBLIC_HEADERS
     CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/Include/*.h
+    ${INCLUDE_DIR}/*.h
 )
 
 file(GLOB_RECURSE VACT_PRIVATE_HEADERS
