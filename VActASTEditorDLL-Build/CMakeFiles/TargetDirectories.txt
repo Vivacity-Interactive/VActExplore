@@ -1,0 +1,9 @@
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/intrinsics_gen.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/vt_gen.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/omp_gen.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/acc_gen.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/target_parser_gen.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/clang-tablegen-targets.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/VActASTEditorDLL.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/ALL_BUILD.dir
+C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/ZERO_CHECK.dir

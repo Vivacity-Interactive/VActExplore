@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="VActASTEditor/VActASTEditor.vcxproj" Id="4a3b1d82-deff-4a42-b71e-0ea387bd1ae2" />
+  <Project Path="VActASTEditorDLL-Build/VActASTEditorDLL.vcxproj" Id="730b45d0-eff5-31f0-a5e6-f0057b8d92a8">
+    <Platform Project="x64" />
+  </Project>
+</Solution>

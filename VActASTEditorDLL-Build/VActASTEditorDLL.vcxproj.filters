@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorComment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorConsumer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorComment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\_VActASTEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorConsumer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorVisitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Repositories\VActExplore\VActASTEditorDLL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{56FAFDA1-D4BF-3BF4-A25A-AFAD7103AD26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{67784FA3-1047-3924-9BB2-700F3C3502DF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

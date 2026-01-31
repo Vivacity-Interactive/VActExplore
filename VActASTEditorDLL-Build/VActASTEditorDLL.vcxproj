@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{730B45D0-EFF5-31F0-A5E6-F0057B8D92A8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>VActASTEditorDLL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Repositories\VActExplore\VActASTEditorDLL\Bin\Debug\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VActASTEditorDLL.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VActASTEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Repositories\VActExplore\VActASTEditorDLL\Bin\Release\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VActASTEditorDLL.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VActASTEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Repositories\VActExplore\VActASTEditorDLL\Bin\MinSizeRel\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VActASTEditorDLL.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">VActASTEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Repositories\VActExplore\VActASTEditorDLL\Bin\RelWithDebInfo\x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VActASTEditorDLL.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">VActASTEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Repositories/ThirdParty/llvm-project/llvm/include" /external:I "C:/Repositories/_Generated/LLVM/include" /external:I "C:/Repositories/ThirdParty/llvm-project/clang/include" /external:I "C:/Repositories/_Generated/LLVM/tools/clang/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR="Debug";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR=\"Debug\";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Repositories\VActExplore\VActASTEditorDLL-Build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Debug/exports.def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Repositories\_Generated\LLVM\Debug\lib\clangTooling.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMSupport.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangDependencyScanning.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangDriver.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangParse.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMPlugins.lib;version.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMWindowsDriver.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangOptions.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangSerialization.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangSema.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangAPINotes.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangEdit.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangAnalysisLifetimeSafety.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangAnalysis.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangFormat.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangToolingInclusions.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangSupport.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangToolingCore.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\Debug\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMFrontendOpenMP.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMScalarOpts.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMAggressiveInstCombine.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMInstCombine.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMFrontendOffloading.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMTransformUtils.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMObjectYAML.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMFrontendAtomic.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMAnalysis.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMProfileData.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMSymbolize.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoGSYM.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoPDB.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoCodeView.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoMSF.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoBTF.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoDWARF.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMFrontendHLSL.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMObject.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMMCParser.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMMC.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDebugInfoDWARFLowLevel.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMIRReader.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMBitReader.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMAsmParser.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMRemarks.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMBitstreamReader.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMTextAPI.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMBinaryFormat.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMFrontendDirective.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMTargetParser.lib;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;ws2_32.lib;ntdll.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;C:\Repositories\_Generated\LLVM\Debug\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/Debug/x64/VActASTEditor.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/Debug/x64/VActASTEditor.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Repositories/ThirdParty/llvm-project/llvm/include" /external:I "C:/Repositories/_Generated/LLVM/include" /external:I "C:/Repositories/ThirdParty/llvm-project/clang/include" /external:I "C:/Repositories/_Generated/LLVM/tools/clang/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR="Release";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR=\"Release\";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Repositories\VActExplore\VActASTEditorDLL-Build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Release/exports.def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Repositories\_Generated\LLVM\Release\lib\clangTooling.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMSupport.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangDependencyScanning.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangDriver.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangParse.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMPlugins.lib;version.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMWindowsDriver.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangOptions.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangSerialization.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangSema.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangAPINotes.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangEdit.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangAnalysisLifetimeSafety.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangAnalysis.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangFormat.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangToolingInclusions.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangSupport.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangToolingCore.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\Release\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMFrontendOpenMP.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMScalarOpts.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMAggressiveInstCombine.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMInstCombine.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMFrontendOffloading.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMTransformUtils.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMObjectYAML.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMFrontendAtomic.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMAnalysis.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMProfileData.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMSymbolize.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoGSYM.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoPDB.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoCodeView.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoMSF.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoBTF.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoDWARF.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMFrontendHLSL.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMObject.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMMCParser.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMMC.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDebugInfoDWARFLowLevel.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMIRReader.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMBitReader.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMAsmParser.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMRemarks.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMBitstreamReader.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMTextAPI.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMBinaryFormat.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMFrontendDirective.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMTargetParser.lib;C:\Repositories\_Generated\LLVM\Release\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;ws2_32.lib;ntdll.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;C:\Repositories\_Generated\LLVM\Release\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/Release/x64/VActASTEditor.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/Release/x64/VActASTEditor.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Repositories/ThirdParty/llvm-project/llvm/include" /external:I "C:/Repositories/_Generated/LLVM/include" /external:I "C:/Repositories/ThirdParty/llvm-project/clang/include" /external:I "C:/Repositories/_Generated/LLVM/tools/clang/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR="MinSizeRel";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR=\"MinSizeRel\";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Repositories\VActExplore\VActASTEditorDLL-Build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/exports.def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangTooling.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMSupport.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangDependencyScanning.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangDriver.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangParse.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMPlugins.lib;version.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMWindowsDriver.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangOptions.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangSerialization.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangSema.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangAPINotes.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangEdit.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangAnalysisLifetimeSafety.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangAnalysis.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangFormat.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangToolingInclusions.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangSupport.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangToolingCore.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMFrontendOpenMP.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMScalarOpts.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMAggressiveInstCombine.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMInstCombine.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMFrontendOffloading.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMTransformUtils.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMObjectYAML.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMFrontendAtomic.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMAnalysis.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMProfileData.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMSymbolize.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoGSYM.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoPDB.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoCodeView.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoMSF.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoBTF.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoDWARF.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMFrontendHLSL.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMObject.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMMCParser.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMMC.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDebugInfoDWARFLowLevel.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMIRReader.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMBitReader.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMAsmParser.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMRemarks.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMBitstreamReader.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMTextAPI.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMBinaryFormat.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMFrontendDirective.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMTargetParser.lib;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;ws2_32.lib;ntdll.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;C:\Repositories\_Generated\LLVM\MinSizeRel\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/MinSizeRel/x64/VActASTEditor.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/MinSizeRel/x64/VActASTEditor.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Repositories/ThirdParty/llvm-project/llvm/include" /external:I "C:/Repositories/_Generated/LLVM/include" /external:I "C:/Repositories/ThirdParty/llvm-project/clang/include" /external:I "C:/Repositories/_Generated/LLVM/tools/clang/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR="RelWithDebInfo";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;EDITOR_BUILD_DLL;CLANG_BUILD_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";VActASTEditorDLL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Repositories\VActExplore\VActASTEditorDLL\Include;C:\Repositories\ThirdParty\llvm-project\llvm\include;C:\Repositories\_Generated\LLVM\include;C:\Repositories\ThirdParty\llvm-project\clang\include;C:\Repositories\_Generated\LLVM\tools\clang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Repositories\VActExplore\VActASTEditorDLL-Build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/exports.def C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangTooling.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMSupport.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangDependencyScanning.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangDriver.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangFrontend.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangParse.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMPlugins.lib;version.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMWindowsDriver.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangOptions.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMOption.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangSerialization.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangSema.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangAPINotes.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangEdit.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangAnalysisLifetimeSafety.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangAnalysis.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangASTMatchers.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangAST.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangFormat.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangToolingInclusions.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangSupport.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangToolingCore.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangRewrite.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangLex.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\clangBasic.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMFrontendOpenMP.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMScalarOpts.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMAggressiveInstCombine.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMInstCombine.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMFrontendOffloading.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMTransformUtils.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMObjectYAML.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMFrontendAtomic.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMAnalysis.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMProfileData.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMSymbolize.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoGSYM.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoPDB.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoCodeView.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoMSF.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoBTF.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoDWARF.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMFrontendHLSL.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMObject.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMMCParser.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMMC.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDebugInfoDWARFLowLevel.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMIRReader.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMBitReader.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMAsmParser.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMCore.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMRemarks.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMBitstreamReader.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMTextAPI.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMBinaryFormat.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMFrontendDirective.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMTargetParser.lib;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMSupport.lib;psapi.lib;shell32.lib;ole32.lib;uuid.lib;advapi32.lib;ws2_32.lib;ntdll.lib;delayimp.lib;-delayload:shell32.dll;-delayload:ole32.dll;C:\Repositories\_Generated\LLVM\RelWithDebInfo\lib\LLVMDemangle.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/RelWithDebInfo/x64/VActASTEditor.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>C:/Repositories/VActExplore/VActASTEditorDLL-Build/VActASTEditorDLL.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Repositories/VActExplore/VActASTEditorDLL/Bin/RelWithDebInfo/x64/VActASTEditor.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Repositories\VActExplore\VActASTEditorDLL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Repositories/VActExplore/VActASTEditorDLL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Repositories/VActExplore/VActASTEditorDLL -BC:/Repositories/VActExplore/VActASTEditorDLL-Build --check-stamp-file C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Repositories\ThirdParty\llvm-project\llvm\cmake\modules\LLVM-Config.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeSystem.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\cmake.verify_globs;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMBuildTreeOnlyTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMExports.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Repositories/VActExplore/VActASTEditorDLL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Repositories/VActExplore/VActASTEditorDLL -BC:/Repositories/VActExplore/VActASTEditorDLL-Build --check-stamp-file C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Repositories\ThirdParty\llvm-project\llvm\cmake\modules\LLVM-Config.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeSystem.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\cmake.verify_globs;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMBuildTreeOnlyTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMExports.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Repositories/VActExplore/VActASTEditorDLL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Repositories/VActExplore/VActASTEditorDLL -BC:/Repositories/VActExplore/VActASTEditorDLL-Build --check-stamp-file C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Repositories\ThirdParty\llvm-project\llvm\cmake\modules\LLVM-Config.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeSystem.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\cmake.verify_globs;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMBuildTreeOnlyTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMExports.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Repositories/VActExplore/VActASTEditorDLL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Repositories/VActExplore/VActASTEditorDLL -BC:/Repositories/VActExplore/VActASTEditorDLL-Build --check-stamp-file C:/Repositories/VActExplore/VActASTEditorDLL-Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Repositories\ThirdParty\llvm-project\llvm\cmake\modules\LLVM-Config.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\4.2.3\CMakeSystem.cmake;C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\cmake.verify_globs;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\clang\ClangTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMBuildTreeOnlyTargets.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfig.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMConfigVersion.cmake;C:\Repositories\_Generated\LLVM\lib\cmake\llvm\LLVMExports.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Repositories\VActExplore\VActASTEditorDLL-Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorAction.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorComment.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorGroup.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorInstance.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorConsumer.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorCursor.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorLink.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorNode.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorUI.cpp" />
+    <ClCompile Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorVisitor.cpp" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorComment.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorCursor.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorGroup.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorInstance.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorLink.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorNode.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\VActEditorUI.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\Include\_VActASTEditor.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorAction.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorConsumer.h" />
+    <ClInclude Include="C:\Repositories\VActExplore\VActASTEditorDLL\VActEditorVisitor.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Repositories\VActExplore\VActASTEditorDLL-Build\ZERO_CHECK.vcxproj">
+      <Project>{052DBBFA-5DA3-3BA2-A976-E204949C80F3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
