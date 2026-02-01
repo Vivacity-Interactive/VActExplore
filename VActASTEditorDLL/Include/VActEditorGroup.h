@@ -14,15 +14,9 @@ namespace VActExplore::ASTEditor
 	public:
 		std::vector<VActEditorNode*> Nodes;
 
-		VActEditorGroup() = default;
-		
-		VActEditorGroup(const VActEditorGroup& Other) = default;
-		
-		VActEditorGroup(VActEditorGroup&& Other) noexcept = default;
-		
-		VActEditorGroup& operator=(const VActEditorGroup& Other) = default;
-		
-		VActEditorGroup& operator=(VActEditorGroup&& Other) noexcept = default;
+		_VACTASTEDITOR_DEFAULT_BODY(VActEditorGroup);
+
+		VActEditorGroup();
 
 		virtual ~VActEditorGroup() = default;
 	};

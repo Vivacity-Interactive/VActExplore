@@ -4,56 +4,56 @@ using namespace VActExplore::ASTEditor;
 
 // Default Names
 
-std::string VActEditorDefaults::Name = "NewName";
+string_t VActEditorDefaults::Name = "NewName";
 
-std::string VActEditorDefaults::FunctionName = "NewFunction";
+string_t VActEditorDefaults::FunctionName = "NewFunction";
 
-std::string VActEditorDefaults::VariableName = "NewVariable";
+string_t VActEditorDefaults::VariableName = "NewVariable";
 
-std::string VActEditorDefaults::ControlName = "";
+string_t VActEditorDefaults::ControlName = "";
 
-std::string VActEditorDefaults::EntityName = "NewClass";
+string_t VActEditorDefaults::EntityName = "NewClass";
 
-std::string VActEditorDefaults::StatementName = "NewFunction";
+string_t VActEditorDefaults::StatementName = "NewFunction";
 
-std::string VActEditorDefaults::ScopeName = "NewNamespace";
+string_t VActEditorDefaults::ScopeName = "NewNamespace";
 
-std::string VActEditorDefaults::ConstructName = "NewClass";
+string_t VActEditorDefaults::ConstructName = "NewClass";
 
-std::string VActEditorDefaults::ReferenceName = "stdlib";
+string_t VActEditorDefaults::ReferenceName = "stdlib";
 
-std::string VActEditorDefaults::ProjectName = "NewProject";
+string_t VActEditorDefaults::ProjectName = "NewProject";
 
-std::string VActEditorDefaults::FileName = "NewFile";
+string_t VActEditorDefaults::FileName = "NewFile";
 
-std::string VActEditorDefaults::ResourceName = "NewResource";
+string_t VActEditorDefaults::ResourceName = "NewResource";
 
-std::string VActEditorDefaults::CommentName = "NewComment";
+string_t VActEditorDefaults::CommentName = "NewComment";
 
 // Default Types
 
-std::string VActEditorDefaults::Type = "float";
+string_t VActEditorDefaults::Type = "float";
 
-std::string VActEditorDefaults::FunctionType = "function";
+string_t VActEditorDefaults::FunctionType = "function";
 
-std::string VActEditorDefaults::VariableType = Type;
+string_t VActEditorDefaults::VariableType = Type;
 
-std::string VActEditorDefaults::ControlType = "if";
+string_t VActEditorDefaults::ControlType = "if";
 
-std::string VActEditorDefaults::EntityType = "class";
+string_t VActEditorDefaults::EntityType = "class";
 
-std::string VActEditorDefaults::StatementType = "function-call";
+string_t VActEditorDefaults::StatementType = "function-call";
 
-std::string VActEditorDefaults::ScopeType = "namespace";
+string_t VActEditorDefaults::ScopeType = "namespace";
 
-std::string VActEditorDefaults::ConstructType = "constructor";
+string_t VActEditorDefaults::ConstructType = "constructor";
 
-std::string VActEditorDefaults::ReferenceType = "include";
+string_t VActEditorDefaults::ReferenceType = "include";
 
-std::string VActEditorDefaults::ProjectType = "ast-main";
+string_t VActEditorDefaults::ProjectType = "ast-main";
 
-std::string VActEditorDefaults::FileType = "h";
+string_t VActEditorDefaults::FileType = "h";
 
-std::string VActEditorDefaults::ResourceType = "binary";
+string_t VActEditorDefaults::ResourceType = "binary";
 
-std::string VActEditorDefaults::CommentType = "block";
+string_t VActEditorDefaults::CommentType = "block";

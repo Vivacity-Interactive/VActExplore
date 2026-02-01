@@ -11,6 +11,10 @@ namespace VActExplore::ASTEditor
 		float X, Y, Z, W;
 		float Width, Height, Depth, Value;
 		float R, G, B, A;
+
+		_VACTASTEDITOR_DEFAULT_BODY(FVActUITransform);
+
+		FVActUITransform() = default;
 	};
 
 	class VACTASTEDITOR_API VActEditorUI
@@ -19,6 +23,8 @@ namespace VActExplore::ASTEditor
 		size_t _Id;
 
 		size_t _Class;
+
+		void* _Context;
 
 		uint8_t bEnabled : 1;
 
@@ -37,21 +43,15 @@ namespace VActExplore::ASTEditor
 		FVActUITransform _Transform;
 
 	public:
-		std::string Name;
+		string_t Name;
 
-		VActEditorUI() = default;
+		_VACTASTEDITOR_DEFAULT_BODY(VActEditorUI);
 
-		VActEditorUI(const VActEditorUI& Other) = default;
+		VActEditorUI();
 
-		VActEditorUI(VActEditorUI&& Other) noexcept = default;
+		VActEditorUI(const string_t Name);
 
-		VActEditorUI& operator=(VActEditorUI&& Other) noexcept = default;
-
-		VActEditorUI& operator=(const VActEditorUI& Other) = default;
-
-		VActEditorUI(std::string Name);
-
-		virtual ~VActEditorUI() = default;
+		virtual ~VActEditorUI();
 
 		virtual void Render() = 0;
 

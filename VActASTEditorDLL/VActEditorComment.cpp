@@ -2,8 +2,14 @@
 
 using namespace VActExplore::ASTEditor;
 
-VActEditorComment::VActEditorComment(std::string Name, std::string Content)
-	: VActEditorUI(std::move(Name))
-	, Content(std::move(Content))
+VActEditorComment::VActEditorComment()
+	: VActEditorComment("Comment", "")
+{
+}
+
+VActEditorComment::VActEditorComment(const string_t Name, const string_t Content)
+	: VActEditorUI(Name)
+	, Content(Content)
+	, Parent(nullptr)
 {
 }

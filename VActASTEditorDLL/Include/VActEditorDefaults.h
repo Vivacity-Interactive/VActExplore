@@ -13,60 +13,60 @@ namespace VActExplore::ASTEditor
     public:
         // Default Names
 
-        static std::string Name;
+        static string_t Name;
 
-        static std::string FunctionName;
+        static string_t FunctionName;
 
-        static std::string VariableName;
+        static string_t VariableName;
 
-        static std::string ControlName;
+        static string_t ControlName;
 
-        static std::string EntityName;
+        static string_t EntityName;
 
-        static std::string StatementName;
+        static string_t StatementName;
 
-        static std::string ScopeName;
+        static string_t ScopeName;
 
-        static std::string ConstructName;
+        static string_t ConstructName;
 
-        static std::string ReferenceName;
+        static string_t ReferenceName;
 
-        static std::string ProjectName;
+        static string_t ProjectName;
 
-        static std::string FileName;
+        static string_t FileName;
 
-        static std::string ResourceName;
+        static string_t ResourceName;
 
-        static std::string CommentName;
+        static string_t CommentName;
 
 
         // Default Types
 
-        static std::string Type;
+        static string_t Type;
 
-        static std::string FunctionType;
+        static string_t FunctionType;
 
-        static std::string VariableType;
+        static string_t VariableType;
 
-        static std::string ControlType;
+        static string_t ControlType;
 
-        static std::string EntityType;
+        static string_t EntityType;
 
-        static std::string StatementType;
+        static string_t StatementType;
 
-        static std::string ScopeType;
+        static string_t ScopeType;
 
-        static std::string ConstructType;
+        static string_t ConstructType;
 
-        static std::string ReferenceType;
+        static string_t ReferenceType;
 
-        static std::string ProjectType;
+        static string_t ProjectType;
 
-        static std::string FileType;
+        static string_t FileType;
 
-        static std::string ResourceType;
+        static string_t ResourceType;
 
-        static std::string CommentType;
+        static string_t CommentType;
 
     };
 }

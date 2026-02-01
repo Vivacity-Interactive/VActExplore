@@ -14,15 +14,9 @@ namespace VActExplore::ASTEditor
 
 		VActEditorNode* To;
 
-		VActEditorLink() = default;
+		_VACTASTEDITOR_DEFAULT_BODY(VActEditorLink);
 
-		VActEditorLink(const VActEditorLink& Other) = default;
-
-		VActEditorLink(VActEditorLink&& Other) noexcept = default;
-
-		VActEditorLink& operator=(VActEditorLink&& Other) noexcept = default;
-
-		VActEditorLink& operator=(const VActEditorLink& Other) = default;
+		VActEditorLink();
 
 		virtual ~VActEditorLink() = default;
 	};

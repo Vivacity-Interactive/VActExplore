@@ -15,7 +15,7 @@ int main(int Argc, char* Argv[])
         return -1;
     }
 
-    std::string FilePath, Source;
+    string_t FilePath, Source;
 
 	Editor->CLI_ResolvePath(FilePath, Argc, (const char**)Argv);
 	Editor->ReadSourceFile(Source, FilePath);

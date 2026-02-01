@@ -15,21 +15,15 @@ namespace VActExplore::ASTEditor
 	public:
 		std::vector<VActEditorNode*> Nodes;
 
-		std::string Type;
+		string_t Type;
 
-		VActEditorNode() = default;
+		_VACTASTEDITOR_DEFAULT_BODY(VActEditorNode);
+
+		VActEditorNode();
 		
-		VActEditorNode(const VActEditorNode& Other) = default;
+		VActEditorNode(const string_t Name, const string_t Type);
 
-		VActEditorNode(VActEditorNode&& Other) noexcept = default;
-		
-		VActEditorNode& operator=(VActEditorNode&& Other) noexcept = default;
-
-		VActEditorNode& operator=(const VActEditorNode& Other) = default;
-		
-		VActEditorNode(std::string Name, std::string Type);
-
-		virtual ~VActEditorNode() = default;
+		~VActEditorNode();
 	};
 }
 

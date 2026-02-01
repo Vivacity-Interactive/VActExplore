@@ -2,11 +2,8 @@
 
 #include "VActEditorVisitor.h"
 
-//#pragma warning(push)
-//#pragma warning(disable:4146)
 #include "clang/AST/ASTConsumer.h"
 #include "clang/Frontend/CompilerInstance.h"
-//#pragma warning(pop)
 
 namespace VActExplore::ASTEditor
 {

@@ -76,11 +76,11 @@ namespace VActExplore::ASTEditor
 
 		// CLI Helpers
 
-		void CLI_ResolvePath(std::string& FilePath, const int32_t Argc, const char** Argv);
+		void CLI_ResolvePath(string_t& FilePath, const int32_t Argc, const char** Argv);
 
 		// Action Helpers
 
-		void ReadSourceFile(std::string& Into, const std::string FilePath);
+		void ReadSourceFile(string_t& Into, const string_t FilePath);
 
 		// Action Helpers
 
@@ -88,142 +88,142 @@ namespace VActExplore::ASTEditor
 
 		void RunASTAction(size_t SourceId);
 
-		void RunASTAction(const std::string& Source);
+		void RunASTAction(const string_t& Source);
 
-		void RunASTAction(const std::string& Source, std::string& FilePath);
+		void RunASTAction(const string_t& Source, string_t& FilePath);
 
 		void PushASTActionCursor(size_t CursorId = 0);
 
 		void PushASTAction(size_t SourceId);
 
-		void PushASTAction(const std::string& Source);
+		void PushASTAction(const string_t& Source);
 
 		void PreviewASTActionCursor(size_t CursorId = 0, size_t DepthMin = 0, size_t DepthMax = 0);
 
 		void PreviewASTAction(size_t SourceId, size_t ScopeId, size_t DepthMin = 0, size_t DepthMax = 0);
 
-		void PreviewASTAction(const std::string& Source, size_t ScopeId, size_t DepthMin = 0, size_t DepthMax = 0);
+		void PreviewASTAction(const string_t& Source, size_t ScopeId, size_t DepthMin = 0, size_t DepthMax = 0);
 
 		void LancheASTActionCursor(size_t CursorId = 0);
 
-		void LancheASTActionCursor(const std::vector<std::string> Arguments, size_t CursorId = 0);
+		void LancheASTActionCursor(const std::vector<string_t> Arguments, size_t CursorId = 0);
 
 		void LancheASTAction();
 
-		void LancheASTAction(const std::vector<std::string> Arguments);
+		void LancheASTAction(const std::vector<string_t> Arguments);
 
 		void CompileASTActionCursor(size_t CursorId = 0);
 
-		void CompileASTActionCursor(const std::vector<std::string> Arguments, size_t CursorId = 0);
+		void CompileASTActionCursor(const std::vector<string_t> Arguments, size_t CursorId = 0);
 
 		void CompileASTAction();
 
-		void CompileASTAction(const std::vector<std::string> Arguments);
+		void CompileASTAction(const std::vector<string_t> Arguments);
 
 		// Creation Helpers
 
-		void NewVariable(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewVariable(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewVariable(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewVariable(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewVariable(size_t CursorId = 0)
 		{
 			NewVariable(VActEditorDefaults::VariableName, VActEditorDefaults::VariableType, CursorId);
 		}
 
-		void NewFunction(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewFunction(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewFunction(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewFunction(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewFunction(size_t CursorId = 0)
 		{
 			NewFunction(VActEditorDefaults::FunctionName, VActEditorDefaults::FunctionType, CursorId);
 		}
 
-		void NewControl(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewControl(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewControl(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewControl(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewControl(size_t CursorId = 0)
 		{
 			NewControl(VActEditorDefaults::ControlName, VActEditorDefaults::ControlType, CursorId);
 		}
 
-		void NewEntity(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewEntity(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewEntity(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewEntity(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewEntity(size_t CursorId = 0)
 		{
 			NewEntity(VActEditorDefaults::EntityName, VActEditorDefaults::EntityType, CursorId);
 		}
 
-		void NewStatement(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewStatement(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewStatement(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewStatement(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewStatement(size_t CursorId = 0)
 		{
 			NewStatement(VActEditorDefaults::StatementName, VActEditorDefaults::StatementType, CursorId);
 		}
 
-		void NewScope(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewScope(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewScope(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewScope(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewScope(size_t CursorId = 0)
 		{
 			NewScope(VActEditorDefaults::ScopeName, VActEditorDefaults::ScopeType, CursorId);
 		}
 
-		void NewConstruct(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewConstruct(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewConstruct(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewConstruct(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewConstruct(size_t CursorId = 0)
 		{
 			NewConstruct(VActEditorDefaults::ConstructName, VActEditorDefaults::ConstructType, CursorId);
 		}
 
-		void NewReference(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewReference(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewReference(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewReference(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewReference(size_t CursorId = 0)
 		{
 			NewReference(VActEditorDefaults::ReferenceName, VActEditorDefaults::ReferenceType, CursorId);
 		}
 
-		void NewProject(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewProject(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewProject(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewProject(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewProject(size_t CursorId = 0)
 		{
 			NewProject(VActEditorDefaults::ProjectName, VActEditorDefaults::ProjectType, CursorId);
 		}
 
-		void NewFile(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewFile(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewFile(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewFile(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewFile(size_t CursorId = 0)
 		{
 			NewFile(VActEditorDefaults::FileName, VActEditorDefaults::FileType, CursorId);
 		}
 
-		void NewResource(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewResource(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewResource(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewResource(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewResource(size_t CursorId = 0)
 		{
 			NewResource(VActEditorDefaults::ResourceName, VActEditorDefaults::ResourceType, CursorId);
 		}
 
-		void NewComment(std::string Name, std::string Type, size_t ScopeId, size_t InsertId);
+		void NewComment(string_t Name, string_t Type, size_t ScopeId, size_t InsertId);
 
-		void NewComment(std::string Name, std::string Type, size_t CursorId = 0);
+		void NewComment(string_t Name, string_t Type, size_t CursorId = 0);
 
 		__forceinline void NewComment(size_t CursorId = 0)
 		{

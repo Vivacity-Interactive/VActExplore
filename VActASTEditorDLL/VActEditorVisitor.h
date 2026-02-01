@@ -1,10 +1,7 @@
 #pragma once
 
-//#pragma warning(push)
-//#pragma warning(disable:4146)
 #include "clang/AST/RecursiveASTVisitor.h"
 #include "clang/AST/ASTContext.h"
-//#pragma warning(pop)
 
 #include "VActEditorNode.h"
 

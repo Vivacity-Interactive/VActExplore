@@ -14,15 +14,9 @@ namespace VActExplore::ASTEditor
 
 		VActEditorNode* Active;
 
-		VActEditorCursor() = default;
+		_VACTASTEDITOR_DEFAULT_BODY(VActEditorCursor);
 
-		VActEditorCursor(const VActEditorCursor& Other) = default;
-
-		VActEditorCursor(VActEditorCursor&& Other) noexcept = default;
-
-		VActEditorCursor& operator=(VActEditorCursor&& Other) noexcept = default;
-
-		VActEditorCursor& operator=(const VActEditorCursor& Other) = default;
+		VActEditorCursor();
 
 		virtual ~VActEditorCursor() = default;
 	};

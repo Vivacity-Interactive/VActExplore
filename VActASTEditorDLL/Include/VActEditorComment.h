@@ -9,21 +9,15 @@ namespace VActExplore::ASTEditor
         public VActEditorUI
     {
 	public:
-        std::string Content;
+        string_t Content;
 
 		VActEditorUI* Parent;
 
-        VActEditorComment() = default;
+        _VACTASTEDITOR_DEFAULT_BODY(VActEditorComment);
+        
+        VActEditorComment();
 
-        VActEditorComment(const VActEditorComment& Other) = default;
-
-        VActEditorComment(VActEditorComment&& Other) noexcept = default;
-
-        VActEditorComment& operator=(VActEditorComment&& Other) noexcept = default;
-
-		VActEditorComment& operator=(const VActEditorComment& Other) = default;
-
-		VActEditorComment(std::string Name, std::string Content);
+		VActEditorComment(const string_t Name, const string_t Content);
 
         virtual ~VActEditorComment() = default;
     };
