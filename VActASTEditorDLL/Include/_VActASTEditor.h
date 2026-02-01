@@ -18,6 +18,7 @@
     CLASSNAME& operator=(const CLASSNAME& Other) = default;
 #endif
 
+#if defined(_VACTASTEDITOR_CUSTOM_STRING)
 #include <string_view>
 #include <string>
 #include <algorithm>
@@ -218,3 +219,7 @@ namespace VActExplore::ASTEditor
         }
     };
 }
+#else
+#include <string>
+using string_t = std::string;
+#endif

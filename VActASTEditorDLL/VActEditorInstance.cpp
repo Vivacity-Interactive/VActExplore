@@ -94,7 +94,7 @@ void VActEditorInstance::CLI_ResolvePath(string_t& Into, const int32_t Argc, con
 
 void VActEditorInstance::ReadSourceFile(string_t& Into, const string_t FilePath)
 {
-	std::ifstream File(*FilePath, std::ios::in);
+	std::ifstream File(FilePath, std::ios::in);
 	if (!File)
 	{
 		std::cerr << "failed to open file: " << FilePath << std::endl;
@@ -119,13 +119,13 @@ void VActEditorInstance::RunASTAction(size_t SourceId)
 void VActEditorInstance::RunASTAction(const string_t& Source)
 {
 	//clang::tooling::runToolOnCode(std::make_unique<VActEditorAction>(), Source);
-	clang::tooling::runToolOnCodeWithArgs(std::make_unique<VActEditorAction>(), *Source, { "-std=c++23" });
+	clang::tooling::runToolOnCodeWithArgs(std::make_unique<VActEditorAction>(), Source, { "-std=c++23" });
 }
 
 void VActEditorInstance::RunASTAction(const string_t& Source, string_t& FilePath)
 {
 	//clang::tooling::runToolOnCode(std::make_unique<VActEditorAction>(), Source);
-	clang::tooling::runToolOnCodeWithArgs(std::make_unique<VActEditorAction>(), *Source, { "-std=c++23" }, *FilePath);
+	clang::tooling::runToolOnCodeWithArgs(std::make_unique<VActEditorAction>(), Source, { "-std=c++23" }, FilePath);
 }
 
 void VActEditorInstance::PushASTActionCursor(size_t CursorId)
