@@ -14,7 +14,38 @@ namespace VActExplore::ASTEditor
 
 		_VACTASTEDITOR_DEFAULT_BODY(FVActUITransform);
 
-		FVActUITransform() = default;
+		FVActUITransform();
+	};
+
+	struct VACTASTEDITOR_API FVActUIState
+	{
+		uint32_t bEnabled : 1;
+
+		uint32_t bDirty : 1;
+
+		uint32_t bIgnored : 1;
+
+		uint32_t bVisible : 1;
+
+		uint32_t bLocked : 1;
+
+		uint32_t bResizable : 1;
+
+		uint32_t bDraggable : 1;
+
+		uint32_t bSelectable : 1;
+
+		uint32_t bAutoWidth : 1;
+
+		uint32_t bAutoHeight : 1;
+
+		uint32_t bAutoDepth : 1;
+
+		uint32_t bAutoValue : 1;
+
+		_VACTASTEDITOR_DEFAULT_BODY(FVActUIState);
+		
+		FVActUIState();
 	};
 
 	class VACTASTEDITOR_API VActEditorUI
@@ -26,19 +57,7 @@ namespace VActExplore::ASTEditor
 
 		void* _Context;
 
-		uint8_t bEnabled : 1;
-
-		uint8_t bIgnored : 1;
-
-		uint8_t bVisible : 1;
-
-		uint8_t bLocked : 1;
-
-		uint8_t bResizable : 1;
-
-		uint8_t bDraggable : 1;
-
-		uint8_t bSelectable : 1;
+		FVActUIState _State;
 
 		FVActUITransform _Transform;
 
@@ -55,7 +74,7 @@ namespace VActExplore::ASTEditor
 
 		virtual void Render() = 0;
 
-		virtual void Pass(size_t PassId = 0, VActEditorUI* Context = nullptr) = 0;
+		virtual void Pass(size_t PassId = 0, VActEditorUI* Subject = nullptr) = 0;
 
 	};
 }
